@@ -1,0 +1,22 @@
+.hero{
+    padding: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__texto{
+        display: flex;
+        justify-content: center;
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            width: 50%;
+        }
+    }
+    &__imagen{
+        img{
+           max-width: 500px;
+        }
+    }
+}

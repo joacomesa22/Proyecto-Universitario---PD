@@ -2,3 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  background-color: gray; }
+
+header {
+  padding: 3rem;
+  width: 100%; }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.logo {
+  width: 200px; }
+
+.logo img {
+  width: 100%; }
+
+.nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around; }
+  .nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem; }
+
+footer {
+  padding: 3rem;
+  width: 100%; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .footer__nav-link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem; }
+  .footer__social {
+    display: flex;
+    gap: 20px; }
+    .footer__social i {
+      font-size: 1.5rem; }
+  .footer__copy {
+    color: #fff; }
+
+.hero {
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero__texto {
+    display: flex;
+    justify-content: center; }
+    .hero__texto-container {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 50%; }
+  .hero__imagen img {
+    max-width: 500px; }
