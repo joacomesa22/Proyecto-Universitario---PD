@@ -1,11 +1,11 @@
 header{
-    padding: 3rem;
-    width: 100%;
+    padding: 1.5rem;
 }
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
 }
 .logo{
     width: 200px;
@@ -14,13 +14,12 @@ header{
     width: 100%;
 }
 .nav{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 
     &__link{
         text-decoration: none;
-        color: #fff;
         font-size: 1.3rem;
     }
 }
@@ -39,7 +38,6 @@ footer{
         gap: 20px;
         &-link{
             text-decoration: none;
-            color: #fff;
             font-size: 1rem;
         }
     }
