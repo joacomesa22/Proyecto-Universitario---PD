@@ -7,18 +7,26 @@
     @include center;
     height: 80vh;
     padding: 6rem 0;
-    
     &__texto{
         h1{
             font-size: 3.2rem;
+            font-family: $fontTitulos; 
+            
+            span{
+                color: $detail;
+            }
         }
         h2{
             font-size: 1.8rem;
+            margin-left: 2px;
+            font-family: $fontTitulos;
         }
         p{
             font-size: 1.2rem;
             width: 75%;
             margin-top: 0.4rem;
+            margin-left: 3px;
+            font-family: $fontTexto;
         }
     }
     &__imagen{
@@ -26,6 +34,7 @@
             width: 100%;
             height: 100%;
             border-radius: 10px;
+            border: 1px solid $detail;
         }
     }
 }
@@ -41,10 +50,11 @@
     @include center;
 
     &__titulo{
-        a{
+        h1{
             text-decoration: none;
             font-size: 3.2rem;
-            color: black;
+            color: $light;
+            font-family: $fontTitulos;
         }
     }
     .cards-container{
@@ -61,7 +71,7 @@
             justify-content: center;
             padding: 20px 20px;
             background: transparent;
-            border: 2px solid black;
+            border: 1px solid $detail;
             border-radius: 15px;
 
             &__img{
@@ -69,6 +79,7 @@
                     width: 100%;
                     height: 100%;
                     border-radius: 15px;
+                    border: 1px solid $detail;
                 }
             }
 
@@ -79,6 +90,7 @@
                 h4{
                     font-size: 1.5rem;
                     margin-top: 8px;
+                    font-family: $fontTitulos;
                 }
 
                 p:first-of-type{
@@ -86,16 +98,23 @@
                 }
                 p{
                     font-size: 1.2rem;
+                    font-family: $fontTexto;
                 }
 
                 a{
-                    color: black;
-                    margin-top: 10px;
+                    color: $light;
+                    margin-top: 12px;
                     width: 150px;
                     padding: 10px 0;
-                    background-color: green;
+                    background-color: $detail;
                     text-decoration: none;
                     border-radius: 10px;
+                    font-family: $fontTitulos;
+                    transition: all 0.3s;
+                    
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -107,16 +126,21 @@
         align-items: center;
         width: 50px;
         height: 50px;
-        background-color: green;
+        background-color: $detail;
         text-decoration: none;
         color: black;
         border-radius: 50%;
+        transition: all 0.3s;
+
+        &:hover{
+             transform: scale(1.2);
+        }
     }
 }
 
-// SECCIÓN STEADYS
+// SECCIÓN RENTAL
 
-.steady{
+.rental{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -128,11 +152,17 @@
     &__texto{
         padding-left: 8rem;
         h1{
-            font-size: 2.7rem;
+            font-size: 2.5rem;
+            font-family: $fontTitulos;
+
+            span{
+                color: $detail;
+            }
         }
         p{
             font-size: 1.2rem;
             width: 100%;
+            font-family: $fontTexto;
             
         }
     }
@@ -141,6 +171,7 @@
             width: 100%;
             height: 100%;
             border-radius: 10px;
+            border: 1px solid $detail;
         }
     }
 }

@@ -9,6 +9,10 @@ header{
 }
 .logo{
     width: 200px;
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .logo img{
     width: 100%;
@@ -20,7 +24,28 @@ header{
 
     &__link{
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: block;
+        border-radius: 16px;
+        padding: 0 15px;
+        display: inline-block;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        font-family: $fontTexto;
+        &::after{
+            content: "";
+            display: block;
+            background: $detail;
+            width: 100%;
+            margin-top: 3px;
+            height: 3px;
+            clip-path: var(--clippy);
+            transition: clip-path .3s;
+        }
+        &:hover{
+            --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+        }
     }
 }
 footer{
@@ -38,17 +63,43 @@ footer{
         gap: 20px;
         &-link{
             text-decoration: none;
-            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: $fontTexto;
+            padding: 0 15px;
+            display: inline-block;
+            --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            font-family: $fontTexto;
+            &::after{
+                content: "";
+                display: block;
+                background: $detail;
+                width: 100%;
+                margin-top: 3px;
+                height: 3px;
+                clip-path: var(--clippy);
+                transition: clip-path .3s;
+            }
+            &:hover{
+                --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+            }
         }
     }
     &__social{
         display: flex;
         gap: 20px;
         i{
-            font-size: 1.5rem;
+            font-size: 2rem;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
     &__copy{
         color: #fff;
+        font-family: $fontTexto;
     }
 }
