@@ -1,7 +1,7 @@
 // Centrado
 @mixin center {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 // Fonts
@@ -9,7 +9,7 @@ $fontTexto: Arial, sans-serif;
 $fontTitulos: 'Oxanium', sans-serif;
 
 // Colors
-$gradient: linear-gradient(45deg, #000, #0D0D0D);
+$gradient: linear-gradient(45deg, #202020, #000);
 $light: #F2F2F2;
 $dark: #0D0D0D;
 $detail: #3084F2;
