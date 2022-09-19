@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+    // Nav
     .btn{
         display: block;
     }
@@ -21,16 +22,58 @@
         right: 0;
     }
 
+    // INDEX
+
+    // Hero
     .hero{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 6rem 6rem;
+        grid-template-columns: 1fr;
         &__texto{
-            
+            margin-top: 1rem;
             text-align: center;
             padding-left: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            align-self: flex-start;
         }
+        &__imagen{
+            align-self: flex-end;
+        }
+    }
+
+    // Work
+    .work{
+        .cards-container{
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+    }
+
+    // Equipment
+    .rental{
+        grid-template-columns: 1fr;
+        padding: 8rem 2rem;
+        &__texto{
+            padding-right: 0;
+            margin-top: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-row: 2;
+            align-self: flex-start;
+        }
+        &__imagen{
+            align-self: flex-end;
+        }
+
+    }
+
+    // Footer
+    .footer{
+        padding: 2rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
     }
 }

@@ -5,10 +5,9 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     @include center;
-    height: 80vh;
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     &__texto{
-        padding-left: 5rem;
+        padding-left: 10rem;
         h1{
             font-size: 2.6rem;
             font-family: $fontTitulos; 
@@ -33,7 +32,6 @@
     &__imagen{
         img{
             width: 100%;
-            height: 100%;
             border-radius: 10px;
             border: 1px solid $detail;
         }
@@ -47,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 6rem 0;
+    padding: 8rem 2rem;
     @include center;
 
     &__titulo{
@@ -132,10 +130,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     @include center;
-    height: 80vh;
-    padding: 6rem 0;
-    margin-bottom: 6rem;
-    
+    padding: 8rem 2rem 12rem 2rem;
     &__texto{
         padding-right: 5rem;
         h1{
@@ -157,7 +152,6 @@
     &__imagen{
         img{
             width: 100%;
-            height: 100%;
             border-radius: 10px;
             border: 1px solid $detail;
         }
