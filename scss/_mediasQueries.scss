@@ -27,6 +27,7 @@
     // Hero
     .hero{
         grid-template-columns: 1fr;
+        padding: 4rem 2rem;
         &__texto{
             margin-top: 1rem;
             text-align: center;
@@ -43,16 +44,18 @@
 
     // Work
     .work{
+        padding: 4rem 2rem;
         .cards-container{
             grid-template-columns: 1fr;
             gap: 3rem;
+            padding: 0;
         }
     }
 
     // Equipment
     .rental{
         grid-template-columns: 1fr;
-        padding: 8rem 2rem;
+        padding: 4rem 2rem 8rem 2rem;
         &__texto{
             padding-right: 0;
             margin-top: 1rem;
@@ -76,4 +79,32 @@
         text-align: center;
         gap: 2rem;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .hero__texto {
+        h1{
+            font-size: 2.4rem;
+        }
+
+        h2{
+            font-size: 1.6rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .rental__texto {
+        h1{
+            font-size: 2.4rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    
 }
