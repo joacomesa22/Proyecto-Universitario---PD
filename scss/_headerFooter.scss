@@ -1,3 +1,4 @@
+// Header
 .header-container{
     padding: 2rem;
     @include center;
@@ -71,6 +72,7 @@
     }
 }
 
+// Footer
 .footer{
     display: flex;
     align-items: center;
