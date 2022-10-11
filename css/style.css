@@ -157,6 +157,7 @@ body {
 .work {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 8rem 2rem;
@@ -177,21 +178,20 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 20px 20px;
+      padding: 1.4rem;
       background: transparent;
       border: 1px solid #3084F2;
       gap: 1rem; }
       .work .cards-container .card__img img {
         width: 100%;
-        height: 100%;
         border: 1px solid #3084F2; }
       .work .cards-container .card__texto {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         gap: 1rem; }
         .work .cards-container .card__texto h4 {
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-family: "Oxanium", sans-serif; }
         .work .cards-container .card__texto a i {
           color: #0D0D0D;
@@ -226,6 +226,81 @@ body {
   .rental__imagen img {
     width: 100%;
     border: 1px solid #3084F2; }
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  font-size: 3.2rem;
+  color: #F2F2F2;
+  font-family: "Oxanium", sans-serif;
+  padding: 6rem 2rem 0 2rem; }
+
+.slider {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem; }
+  .slider__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .slider__card-title {
+      text-align: center;
+      margin-top: 0.6rem;
+      font-size: 2rem;
+      color: #F2F2F2;
+      font-family: "Oxanium", sans-serif; }
+    .slider__card-img {
+      width: 100%;
+      border: 1px solid #3084F2; }
+
+.portfolio {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 2rem 2rem 6rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; }
+  .portfolio__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #3084F2;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: flex-start; }
+    .portfolio__card-img img {
+      width: 100%; }
+    .portfolio__card-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .portfolio__card-text--info {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif; }
+        .portfolio__card-text--info h3 {
+          font-size: 1rem;
+          margin-bottom: 0.4rem; }
+        .portfolio__card-text--info p {
+          font-size: 0.8rem;
+          line-height: 18px; }
+      .portfolio__card-text a i {
+        color: #0D0D0D;
+        padding: 8px 12px;
+        transition: all 0.2s;
+        background-color: #3084F2;
+        border: 1px solid #3084F2; }
+        .portfolio__card-text a i:hover {
+          background: transparent;
+          color: #3084F2;
+          border: 1px solid #3084F2; }
 
 .equipment {
   display: flex;
@@ -454,7 +529,15 @@ body {
   .equipment .e-cards-container {
     grid-template-columns: repeat(2, 1fr); }
   .underwater .u-cards-container {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .slider {
+    padding: 2rem 0; }
+    .slider__card-img {
+      border: none;
+      border-top: 1px solid #3084F2;
+      border-bottom: 1px solid #3084F2; }
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 480px) {
   .hero__texto h1 {
@@ -465,6 +548,8 @@ body {
     font-size: 1rem; }
   .work .cards-container .card .card__texto h4 {
     font-size: 1.5rem; }
+  .work .cards-container .card .card__texto a i {
+    padding: 8px 16px; }
   .rental__texto h1 {
     font-size: 2.4rem; }
   .rental__texto p {
@@ -475,6 +560,8 @@ body {
     grid-template-columns: 1fr; }
   .underwater {
     padding-top: 0; }
+    .underwater .u-cards-container {
+      width: 100%; }
     .underwater h1 {
       font-size: 2.6rem; }
   .underwater .u-cards-container .u-card__text h4 {
@@ -483,4 +570,10 @@ body {
     font-size: 0.8rem; }
   .formulario-container {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .portfolio-title {
+    font-size: 2.6rem; }
+  .slider__card-title {
+    font-size: 1.5rem; }
+  .portfolio {
+    grid-template-columns: 1fr; } }

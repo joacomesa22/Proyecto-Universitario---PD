@@ -96,6 +96,25 @@
     .underwater .u-cards-container{
         grid-template-columns: 1fr;
     }
+
+    // PORTFOLIO
+
+    // Slider
+    .slider{
+        padding: 2rem 0;
+        &__card{
+            &-img{
+                border: none;
+                border-top: 1px solid $detail;
+                border-bottom: 1px solid $detail;
+            }
+        }
+    }
+
+    // Cards
+    .portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -114,12 +133,19 @@
         }
     }
 
+    // Work
     .work .cards-container .card .card__texto{
         h4{
             font-size: 1.5rem;
         }
+        a{
+            i{
+                padding: 8px 16px;
+            }
+        }
     }
 
+    // Rental
     .rental__texto {
         h1{
             font-size: 2.4rem;
@@ -145,9 +171,14 @@
 
     .underwater {
         padding-top: 0;
+        
+        .u-cards-container{
+            width: 100%;
+        }
+
         h1{
-        font-size: 2.6rem;
-    }
+            font-size: 2.6rem;
+        }
     }
     .underwater .u-cards-container .u-card {
 
@@ -167,5 +198,28 @@
     .formulario-container{
         flex-direction: column;
         align-items: center;
+    }
+
+     // PORTFOLIO
+
+    // Cards
+
+    .portfolio-title{
+        font-size: 2.6rem;
+    }
+
+    // Slider
+    .slider{
+        &__card{
+            &-title{
+                font-size: 1.5rem;
+            }
+        
+        }
+    }
+
+    // Cards
+    .portfolio{
+        grid-template-columns: 1fr;
     }
 }
