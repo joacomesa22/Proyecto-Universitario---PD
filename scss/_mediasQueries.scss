@@ -1,225 +1,338 @@
-@media screen and (max-width: 768px) {
-    // Nav
-    .btn{
-        display: block;
+@media screen and (max-width: 890px) {
+  // Anuncio
+  .an {
+    width: 300px;
+    height: 250px;
+  }
+
+  // Nav
+  .btn {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    right: -100%;
+    gap: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: #000;
+    background-image: url(../img/black-twill.png);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.6s;
+    justify-content: space-evenly;
+    border-left: 2px solid $detail;
+
+    &__link {
+      font-size: 1.3rem;
     }
-    .nav{
-        position: fixed;
-        right: -100%;
-        gap: 0;
-        top: 0;
-        flex-direction: column;
-        background-color: #000;
-        background-image: url(../img/black-twill.png);
-        width: 70%;
-        height: 100%;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  // INDEX
+
+  // Hero
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+    &__texto {
+      margin-top: 1rem;
+      text-align: center;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: flex-start;
+    }
+    &__imagen {
+      align-self: flex-end;
+    }
+  }
+
+  // Equipment
+  .rental {
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem 8rem 2rem;
+    &__texto {
+      padding-right: 0;
+      margin-top: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-row: 2;
+      align-self: flex-start;
+      gap: 0.3rem;
+    }
+    &__imagen {
+      align-self: flex-end;
+    }
+  }
+
+  // Footer
+  .footer {
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  // EQUIPMENT
+
+  // Equipment
+  .equipment .e-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Underwater
+
+  .underwater .u-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  // PORTFOLIO
+
+  // Slider
+  .slider {
+    padding: 2rem 0;
+    &__card {
+      &-img {
+        border: none;
+        border-top: 1px solid $detail;
+        border-bottom: 1px solid $detail;
+      }
+    }
+  }
+
+  // Cards
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Presentacion
+  .pr-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+    padding: 5rem 2rem 20rem 2rem;
+  }
+  .pr-kit {
+    flex-direction: column;
+  }
+  .pr-estructura {
+    padding: 4rem 2rem;
+    gap: 10rem;
+    &__card-a {
+      h2 {
+        font-size: 2rem;
         text-align: center;
-        transition: all 0.6s; 
-        justify-content: space-evenly;
-        border-left: 2px solid $detail;
-    
-        overflow: hidden;
+      }
     }
-
-    .nav.active{
-        right: 0;
-    }
-
-    // INDEX
-
-    // Hero
-    .hero{
-        grid-template-columns: 1fr;
-        padding: 4rem 2rem;
-        &__texto{
-            margin-top: 1rem;
-            text-align: center;
-            padding-left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-self: flex-start;
-        }
-        &__imagen{
-            align-self: flex-end;
-        }
-    }
-
-    // Work
-    .work{
-        padding: 4rem 3rem;
-        .cards-container{
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            padding: 0;
-        }
-    }
-
-    // Equipment
-    .rental{
-        grid-template-columns: 1fr;
-        padding: 4rem 2rem 8rem 2rem;
-        &__texto{
-            padding-right: 0;
-            margin-top: 1rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            grid-row: 2;
-            align-self: flex-start;
-            gap: 0.3rem;
-        }
-        &__imagen{
-            align-self: flex-end;
-        }
-
-    }
-
-    // Footer
-    .footer{
-        padding: 2rem;
-        flex-direction: column;
+    &__card-w {
+      h2 {
+        font-size: 2rem;
         text-align: center;
-        gap: 2rem;
+      }
+    }
+  }
+
+  // Muchas Gracias
+  .irsitio {
+    h1 {
+      font-size: 6rem;
+    }
+    a {
+      button {
+        padding: 0.6rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Anuncio
+@media screen and (max-width: 727px) {
+  .anuncio {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.8rem;
+
+    p {
+      font-size: 1rem;
     }
 
-    // EQUIPMENT
-
-    // Equipment
-    .equipment .e-cards-container{
-        grid-template-columns: repeat(2, 1fr);
+    a {
+      padding: 12px 20px;
+      font-size: 1.4rem;
     }
-
-    // Underwater
-    
-    .underwater .u-cards-container{
-        grid-template-columns: 1fr;
-    }
-
-    // PORTFOLIO
-
-    // Slider
-    .slider{
-        padding: 2rem 0;
-        &__card{
-            &-img{
-                border: none;
-                border-top: 1px solid $detail;
-                border-bottom: 1px solid $detail;
-            }
-        }
-    }
-
-    // Cards
-    .portfolio{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-    // Hero Index
-    .hero__texto {
-        h1{
-            font-size: 2.4rem;
-        }
-
-        h2{
-            font-size: 1.6rem;
-        }
-
-        p{
-            font-size: 1rem;
-        }
+  // Hero Index
+  .hero__texto {
+    h1 {
+      font-size: 2.4rem;
     }
 
-    // Work
-    .work .cards-container .card .card__texto{
-        h4{
-            font-size: 1.5rem;
-        }
-        a{
-            i{
-                padding: 8px 16px;
-            }
-        }
+    h2 {
+      font-size: 1.6rem;
     }
 
-    // Rental
-    .rental__texto {
-        h1{
-            font-size: 2.4rem;
-        }
+    p {
+      font-size: 1rem;
+    }
+  }
 
-        p{
-            font-size: 1rem;
-        }
+  // Work
+  .work .cards-container .card .card__texto {
+    h4 {
+      font-size: 1.5rem;
+    }
+    a {
+      i {
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  // Rental
+  .rental__texto {
+    h1 {
+      font-size: 2.4rem;
     }
 
-    // EQUIPMENT
+    p {
+      font-size: 1rem;
+    }
+  }
 
-    // Equipment
-    .equipment h1{
-        font-size: 2.6rem;
+  // EQUIPMENT
+
+  // Equipment
+  .equipment h1 {
+    font-size: 2.6rem;
+  }
+
+  .equipment .e-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  // Underwater
+
+  .underwater {
+    padding-top: 0;
+
+    .u-cards-container {
+      width: 100%;
     }
 
-    .equipment .e-cards-container{
+    h1 {
+      font-size: 2.6rem;
+    }
+  }
+  .underwater .u-cards-container .u-card {
+    &__text {
+      h4 {
+        font-size: 1.2rem;
+      }
+      &-info {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  // CONTACT
+  .formulario-container {
+    flex-direction: column;
+    align-items: center;
+
+    .datos {
+      &__info {
+        text-align: center;
+        gap: 4px;
+      }
+    }
+  }
+
+  // PORTFOLIO
+
+  // Cards
+
+  .portfolio-title {
+    font-size: 2.6rem;
+  }
+
+  // Slider
+  .slider {
+    &__card {
+      &-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // Cards
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  // Presentación
+  .pr-hero {
+    padding: 5rem 1rem 20rem 1rem;
+    &__text {
+      h4 {
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .pr-about__card {
+    padding: 1.3rem;
+    &-text {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .pr-kit {
+    padding: 10rem 2rem;
+    &__card {
+      padding: 1rem;
+      gap: 0.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .pr-estructura {
+    padding: 4rem 1rem;
+    &__card-w {
+      &-img {
         grid-template-columns: 1fr;
+      }
     }
+  }
+  .pr-headerfooter {
+    padding: 10rem 1rem;
+  }
 
-    // Underwater
-
-    .underwater {
-        padding-top: 0;
-        
-        .u-cards-container{
-            width: 100%;
-        }
-
-        h1{
-            font-size: 2.6rem;
-        }
+  // Muchas Gracias
+  .irsitio {
+    h1 {
+      font-size: 4.6rem;
     }
-    .underwater .u-cards-container .u-card {
-
-        &__text{
-            h4{
-                font-size: 1.2rem;
-            }
-            &-info{
-                p{
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
-    
-    // CONTACT
-    .formulario-container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-     // PORTFOLIO
-
-    // Cards
-
-    .portfolio-title{
-        font-size: 2.6rem;
-    }
-
-    // Slider
-    .slider{
-        &__card{
-            &-title{
-                font-size: 1.5rem;
-            }
-        
-        }
-    }
-
-    // Cards
-    .portfolio{
-        grid-template-columns: 1fr;
-    }
+  }
 }

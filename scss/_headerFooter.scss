@@ -1,127 +1,161 @@
-// Header
-.header-container{
-    padding: 2rem;
-    @include center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid $detail;
-}
-.logo{
-    width: 200px;
-    transition: all 0.3s;
-    &:hover{
-        transform: scale(1.1);
-    }
-}
-.logo img{
-    width: 100%;
-}
-.btn{
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    display: none;
-    
-    span{
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: $light;
-        margin-top: 6px;
-        transform-origin: 0px 100%;
-        transition: all 300ms;
-    }
-    &__line1-active{
-        transform: rotate(45deg) translate(-3px, 2px);
-    }
-    &__line2-active{
-        opacity: 0;
-        margin-right: 30px;
-    }
-    &__line3-active{
-        transform: rotate(-45deg) translate(-3px, 1px);
-    }
+// Anuncio
+.an {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.nav{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    &__link{
-        margin-top: 8px;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        display: inline-block;
-        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-        font-family: $fontTexto;
-        &::after{
-            content: "";
-            display: block;
-            background: $detail;
-            width: 100%;
-            margin-top: 4px;
-            height: 1.3px;
-            clip-path: var(--clippy);
-            transition: clip-path .2s;
-        }
-        &:hover{
-            --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
-        }
+// Header
+.header-container {
+  padding: 2rem;
+  @include center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $detail;
+}
+.logo {
+  width: 200px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.logo img {
+  width: 100%;
+}
+.btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $light;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  }
+  &__line1-active {
+    transform: rotate(45deg) translate(-3px, 2px);
+  }
+  &__line2-active {
+    opacity: 0;
+    margin-right: 30px;
+  }
+  &__line3-active {
+    transform: rotate(-45deg) translate(-3px, 1px);
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  &__link {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    font-family: $fontTexto;
+    &::after {
+      content: "";
+      display: block;
+      background: $detail;
+      width: 100%;
+      margin-top: 4px;
+      height: 1.3px;
+      clip-path: var(--clippy);
+      transition: clip-path 0.2s;
     }
+    &:hover {
+      --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+    }
+  }
 }
 
 // Footer
-.footer{
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $detail;
+  padding: 4rem 2rem;
+  @include center;
+  width: 100%;
+  &__nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid $detail;
-    padding: 4rem 2rem;
-    @include center;
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        &-link{
-            text-transform: uppercase;
-            font-weight: 600;
-            font-family: $fontTexto;
-            padding: 0 15px;
-            display: inline-block;
-            --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-            font-family: $fontTexto;
-            &::after{
-                content: "";
-                display: block;
-                background: $detail;
-                width: 100%;
-                margin-top: 4px;
-                height: 1.3px;
-                clip-path: var(--clippy);
-                transition: clip-path .3s;
-            }
-            &:hover{
-                --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
-            }
-        }
+    flex-direction: column;
+    gap: 20px;
+    &-link {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: $fontTexto;
+      padding: 0 15px;
+      display: inline-block;
+      --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      font-family: $fontTexto;
+      &::after {
+        content: "";
+        display: block;
+        background: $detail;
+        width: 100%;
+        margin-top: 4px;
+        height: 1.3px;
+        clip-path: var(--clippy);
+        transition: clip-path 0.3s;
+      }
+      &:hover {
+        --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+      }
     }
-    &__social{
-        display: flex;
-        gap: 20px;
-        i{
-            font-size: 2rem;
-            transition: all 0.2s;
-            cursor: pointer;
+  }
+  &__social {
+    display: flex;
+    gap: 20px;
+    i {
+      font-size: 2rem;
+      transition: all 0.2s;
+      cursor: pointer;
 
-            &:hover{
-                transform: scale(1.2);
-            }
-        }
+      &:hover {
+        transform: scale(1.2);
+      }
     }
-    &__copy{
-        color: #fff;
-        font-family: $fontTexto;
-    }
+  }
+  &__copy {
+    color: $light;
+    font-family: $fontTexto;
+  }
+}
+
+.link-presentacion {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $fontTexto;
+  padding: 0 15px;
+  cursor: pointer;
+  display: inline-block;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  font-family: $fontTexto;
+  &::after {
+    content: "";
+    display: block;
+    background: $detail;
+    width: 100%;
+    margin-top: 4px;
+    height: 1.3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.3s;
+  }
+  &:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+  }
 }

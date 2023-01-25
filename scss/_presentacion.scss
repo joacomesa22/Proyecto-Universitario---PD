@@ -1,0 +1,217 @@
+.pr-hero {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  min-height: 100vh;
+  &__text {
+    h4 {
+      font-size: 1.5rem;
+      font-family: $fontTexto;
+      color: $detail;
+    }
+    h1 {
+      font-size: 5rem;
+      font-family: $fontTitulos;
+    }
+    h2 {
+      font-size: 2rem;
+      font-family: $fontTitulos;
+    }
+  }
+  &__img {
+    max-width: 800px;
+    img {
+      width: 100%;
+      border: 4px solid $detail;
+      border-radius: 4px;
+    }
+  }
+}
+.pr-about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  padding: 10rem 2rem;
+  background-color: $detail;
+  &__card {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: #000;
+    background-image: url(../img/black-twill.png);
+    border-radius: 8px;
+    i {
+      font-size: 5rem;
+      color: $detail;
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      height: 100%;
+      h3 {
+        font-size: 2rem;
+        font-family: $fontTitulos;
+      }
+      p {
+        font-family: $fontTexto;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+.pr-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 20rem 4rem;
+  background-image: url(../img/fondazo.jpg);
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  border-bottom: 4px solid $detail;
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #000;
+    background-image: url(../img/black-twill.png);
+    border-radius: 8px;
+    border: 4px solid $detail;
+    h2 {
+      font-size: 3rem;
+      font-family: $fontTitulos;
+      text-align: center;
+    }
+    &-img {
+      img {
+        width: 100%;
+        border-radius: 8px;
+        border: 4px solid $detail;
+      }
+    }
+  }
+}
+.pr-estructura {
+  padding: 20rem 2rem;
+  background-color: #000;
+  background-image: url(../img/black-twill.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40rem;
+  min-height: 100vh;
+  &__card-a {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    h2 {
+      font-size: 4rem;
+      font-family: $fontTitulos;
+    }
+    &-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__card-w {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    h2 {
+      font-size: 4rem;
+      font-family: $fontTitulos;
+    }
+    &-img {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.pr-headerfooter {
+  padding: 20rem 4rem;
+  min-height: 100vh;
+  background-image: url(../img/otracam.jpg);
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  border-top: 4px solid $detail;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  &-h,
+  &-f {
+    background-color: #000;
+    background-image: url(../img/black-twill.png);
+    padding: 1rem 1rem 4rem 1rem;
+    border-radius: 8px;
+    h2 {
+      font-size: 2rem;
+      font-family: $fontTitulos;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.irsitio {
+  min-height: 100vh;
+  background-color: $detail;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: 4px solid $dark;
+  text-align: center;
+  h1 {
+    font-size: 10rem;
+    font-family: $fontTitulos;
+    color: $dark;
+  }
+  a {
+    button {
+      background-color: #000;
+      background-image: url(../img/black-twill.png);
+      font-size: 1.4rem;
+      font-family: $fontTitulos;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border: 4px solid $dark;
+      transition: all 0.3s;
+      &:hover {
+        background: $detail;
+        color: $dark;
+        border: 4px solid $dark;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,160 +1,159 @@
 // SECCIÓN HERO
-.hero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    @include center;
-    padding: 8rem 2rem;
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  @include center;
+  padding: 8rem 2rem;
 
-    &__texto{
-        padding-left: 8rem;
-        h1{
-            font-size: 3.5rem;
-            font-family: $fontTitulos;
-            line-height: 50px; 
+  &__texto {
+    padding-left: 8rem;
+    h1 {
+      font-size: 3.5rem;
+      font-family: $fontTitulos;
+      line-height: 50px;
 
-            span{
-                color: $detail;
-            }
-        }
-        h2{
-            font-size: 1.8rem;
-            font-family: $fontTitulos;
-            padding-left: 4px;
-            color: #db0200;
-            line-height: 50px;
-        }
-        p{
-            font-size: 1.1rem;
-            padding-left: 4px;
-            font-family: $fontTexto;
-        }
-        a{
-            i{
-                font-size: 3rem;
-                transition: all 0.2s;
-                cursor: pointer;
-                margin-top: 0.6rem;
-                padding-left: 4px;
-
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
-        }
+      span {
+        color: $detail;
+      }
     }
-    &__imagen{
-        img{
-            width: 100%;
-            border: 1px solid $detail;
-        }
+    h2 {
+      font-size: 1.8rem;
+      font-family: $fontTitulos;
+      padding-left: 4px;
+      color: #db0200;
+      line-height: 50px;
     }
+    p {
+      font-size: 1.1rem;
+      padding-left: 4px;
+      font-family: $fontTexto;
+    }
+    a {
+      i {
+        font-size: 3rem;
+        transition: all 0.2s;
+        cursor: pointer;
+        margin-top: 0.6rem;
+        padding-left: 4px;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__imagen {
+    img {
+      width: 100%;
+      border: 1px solid $detail;
+    }
+  }
 }
 
 // SECCIÓN WORK
 
-.work{  
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 1.5rem;
+  @include center;
+
+  &__titulo {
+    h1 {
+      font-size: 3.2rem;
+      color: $light;
+      font-family: $fontTitulos;
+    }
+  }
+  .cards-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 8rem 2rem;
-    @include center;
-    
-    &__titulo{
-        h1{
-            font-size: 3.2rem;
-            color: $light;
-            font-family: $fontTitulos;
-        }
-    }
-    .cards-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-        justify-items: center;
-        width: 100%;
-        margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    overflow: hidden;
 
-        .card{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1.4rem;
-            background: transparent;
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.4rem;
+      background: transparent;
+      border: 1px solid $detail;
+      gap: 1rem;
+      max-width: 400px;
+
+      &__img {
+        img {
+          width: 100%;
+          border: 1px solid $detail;
+        }
+      }
+
+      &__texto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        h4 {
+          font-size: 1.8rem;
+          font-family: $fontTitulos;
+        }
+
+        a {
+          i {
+            color: $dark;
+            padding: 12px 20px;
+            transition: all 0.2s;
+            background-color: $detail;
             border: 1px solid $detail;
-            gap: 1rem;
-            
 
-            &__img{
-                img{
-                    width: 100%;
-                    border: 1px solid $detail;
-                }
+            &:hover {
+              background: transparent;
+              color: $detail;
+              border: 1px solid $detail;
             }
-
-            &__texto{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 1rem;
-
-                h4{
-                    font-size: 1.8rem;
-                    font-family: $fontTitulos;
-                }
-
-                a{
-                    i{
-                        color: $dark;
-                        padding: 12px 20px;
-                        transition: all 0.2s;
-                        background-color: $detail;
-                        border: 1px solid $detail;
-
-                        &:hover{
-                            background: transparent;
-                            color: $detail;
-                            border: 1px solid $detail;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }
 
-
 // SECCIÓN RENTAL
-.rental{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    @include center;
-    padding: 8rem 2rem 12rem 2rem;
-    &__texto{
-        padding-right: 5rem;
-        h1{
-            font-size: 2.5rem;
-            font-family: $fontTitulos;
+.rental {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  @include center;
+  padding: 8rem 2rem 12rem 2rem;
+  &__texto {
+    padding-right: 5rem;
+    h1 {
+      font-size: 2.5rem;
+      font-family: $fontTitulos;
+      width: 100%;
 
-            span{
-                color: $detail;
-            }
-        }
-        p{
-            font-size: 1.2rem;
-            width: 100%;
-            font-family: $fontTexto;
-            margin-left: 3px;
-            
-        }
+      span {
+        color: $detail;
+      }
     }
-    &__imagen{
-        img{
-            width: 100%;
-            border: 1px solid $detail;
-        }
+    p {
+      font-size: 1.2rem;
+      width: 100%;
+      font-family: $fontTexto;
+      margin-left: 3px;
     }
+  }
+  &__imagen {
+    img {
+      width: 100%;
+      border: 1px solid $detail;
+    }
+  }
 }

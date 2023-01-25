@@ -1,0 +1,19 @@
+.gallery-container {
+  @include center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+
+  .gallery-title {
+    font-size: 3.2rem;
+    color: $light;
+    font-family: $fontTitulos;
+  }
+
+  .gallery {
+    text-align: center;
+  }
+}

@@ -1,115 +1,111 @@
-.formulario{
-    @include center;
-    padding: 6rem 2rem;
+.formulario {
+  @include center;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: 4rem;
+    color: $light;
+    font-family: $fontTitulos;
+  }
+
+  .formulario-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    gap: 6rem;
 
-    h1{
-        font-size: 4rem;
-        color: $light;
-        font-family: $fontTitulos;
-    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 
-    .formulario-container{
+      &__text {
         display: flex;
-        gap: 6rem;
-        
-        .form{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            
-            &__text{
-                display: flex;
-                flex-direction: column;
-                gap: 0.4rem;
-                width: 50%;
-                
-                p{
-                    font-size: 1.2rem;
-                    font-family: $fontTexto;
-                    
-                }
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 50%;
 
-                input{
-                    background: transparent;
-                    border: 1px solid $detail;
-                    color: $light;
-                    padding: 7px;
-                    transition: all 0.3s;
-
-                    &:hover{
-                        transform: translateY(-2px);
-                    }
-                }
-            }
-            
-            &__textarea{
-                display: flex;
-                flex-direction: column;
-                gap: 0.6rem; 
-                
-                p{
-                    font-size: 1.2rem;
-                    font-family: $fontTexto;
-                }
-                
-                textarea{
-                    background: transparent;
-                    border: 1px solid $detail;
-                    color: $light;
-                    resize: none;
-                    transition: all 0.3s;
-
-                    &:hover{
-                        transform: translateY(-2px);
-                    }
-                }
-            }
-
-            &__submit{
-                width: 100px;
-                padding: 4px 8px;
-                color: $dark;
-                background: $detail;
-                border: 1px solid $detail;
-                transition: all 0.2s;
-                font-size: 1.1rem;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-
-                &:hover{
-                    background: transparent;
-                    color: $detail;
-                    border: 1px solid $detail;
-                    transform: scale(1.1);
-                }
-            }
+        p {
+          font-size: 1.2rem;
+          font-family: $fontTexto;
         }
 
-        .datos{
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            
-            &__info{
-                color: $light;
-                font-family: $fontTexto;
-
-                h4:first-of-type{
-                    margin-top: 0;
-                }
-
-                h4{
-                    margin: 0.5rem 0 0.1rem 0;
-                }
-                p{
-                    opacity: .7;
-                }
-            }
+        input {
+          background: transparent;
+          border: 1px solid $detail;
+          color: $light;
+          padding: 7px;
         }
+      }
+
+      &__textarea {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        p {
+          font-size: 1.2rem;
+          font-family: $fontTexto;
+        }
+
+        textarea {
+          background: transparent;
+          border: 1px solid $detail;
+          color: $light;
+          resize: none;
+          transition: all 0.3s;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      &__submit {
+        width: 100px;
+        padding: 4px 8px;
+        color: $dark;
+        background: $detail;
+        border: 1px solid $detail;
+        transition: all 0.2s;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        &:hover {
+          background: transparent;
+          color: $detail;
+          border: 1px solid $detail;
+          transform: scale(1.1);
+        }
+      }
     }
+
+    .datos {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      &__info {
+        color: $light;
+        font-family: $fontTexto;
+        display: flex;
+        flex-direction: column;
+
+        h4:first-of-type {
+          margin-top: 0;
+        }
+
+        h4 {
+          margin: 0.5rem 0 0.1rem 0;
+        }
+        p {
+          color: #9e9e9e;
+        }
+      }
+    }
+  }
 }

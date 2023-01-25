@@ -1,0 +1,39 @@
+.anuncio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  height: 100vh;
+  &__img {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    font-family: $fontTexto;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  a {
+    margin-top: 3px;
+    color: $dark;
+    font-family: $fontTitulos;
+    padding: 6px 10px;
+    transition: all 0.2s;
+    background-color: $detail;
+    border: 1px solid $detail;
+
+    &:hover {
+      background: transparent;
+      color: $detail;
+      border: 1px solid $detail;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 // Centrado
 @mixin center {
-    margin: 0 auto;
-    max-width: 1400px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 // Fonts
-$fontTexto: Arial, sans-serif;  
-$fontTitulos: 'Oxanium', sans-serif;
+$fontTexto: Arial, sans-serif;
+$fontTitulos: "Oxanium", sans-serif;
 
 // Colors
-$light: #F2F2F2;
-$dark: #0D0D0D;
-$detail: #3084F2;
+$light: #f2f2f2;
+$dark: #0d0d0d;
+$detail: #3084f2;

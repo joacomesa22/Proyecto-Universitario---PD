@@ -1,99 +1,95 @@
 // Comercials
-.portfolio-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include center;
-    font-size: 3.2rem;
-    color: $light;
-    font-family: $fontTitulos;
-    padding: 6rem 2rem 0 2rem;
+.portfolio-title {
+  text-align: center;
+  @include center;
+  font-size: 3.2rem;
+  color: $light;
+  font-family: $fontTitulos;
+  padding: 6rem 2rem 0 2rem;
 }
 
-.slider{
-    @include center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 2rem;
+.slider {
+  @include center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 
-    &__card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &-title {
+      text-align: center;
+      margin-top: 0.6rem;
+      font-size: 2rem;
+      color: $light;
+      font-family: $fontTitulos;
+    }
+
+    &-img {
+      width: 100%;
+      border: 1px solid $detail;
+    }
+  }
+}
+
+.portfolio {
+  @include center;
+  padding: 2rem 2rem 6rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $detail;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: flex-start;
+    &-img {
+      img {
         width: 100%;
-
-        &-title{
-            text-align: center;
-            margin-top: 0.6rem;
-            font-size: 2rem;
-            color: $light;
-            font-family: $fontTitulos;
-        }
-
-        &-img{
-            width: 100%;
-            border: 1px solid $detail;
-        }
+      }
     }
-}
 
-.portfolio{
-    @include center;
-    padding: 2rem 2rem 6rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    &__card{
+    &-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &--info {
         display: flex;
         flex-direction: column;
-        border: 1px solid $detail;
-        padding: 1rem;
-        gap: 1rem;
-        justify-content: flex-start;
-        &-img{
-            img{
-                width: 100%;
-            }
+        font-family: $fontTexto;
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 0.4rem;
         }
-
-        &-text{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            &--info{
-                display: flex;
-                flex-direction: column;
-                font-family: $fontTexto;
-
-                h3{
-                    font-size: 1rem;
-                    margin-bottom: 0.4rem;
-                }
-                p{
-                    font-size: 0.8rem;
-                    line-height: 18px;
-                }
-            }
-            a{
-                i{
-                    color: $dark;
-                    padding: 8px 12px;
-                    transition: all 0.2s;
-                    background-color: $detail;
-                    border: 1px solid $detail;
-
-                    &:hover{
-                        background: transparent;
-                        color: $detail;
-                        border: 1px solid $detail;
-                    }
-                }
-            }
+        p {
+          font-size: 0.8rem;
+          line-height: 18px;
         }
+      }
+      a {
+        i {
+          color: $dark;
+          padding: 8px 12px;
+          transition: all 0.2s;
+          background-color: $detail;
+          border: 1px solid $detail;
 
+          &:hover {
+            background: transparent;
+            color: $detail;
+            border: 1px solid $detail;
+          }
+        }
+      }
     }
+  }
 }
-
